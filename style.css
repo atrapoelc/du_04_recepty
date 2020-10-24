@@ -40,3 +40,83 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+/*můj pokus o vytvoření mobilního náhledu*/
+body {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.hlavni-recept .recept-nazev {
+    font-size: 1.75rem;
+}
+
+.doporucujeme {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hlavni-recept {
+    background-image: url("burger.jpg");
+    min-height: 200px;
+    flex-basis: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    flex-wrap: wrap;
+}
+
+.recept-meta {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.recept-nazev {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 0.5rem;
+}
+
+.sloupec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recept.recept2 {
+    background-image: url("sushi.jpg");
+} 
+
+.recept.recept3 {
+    background-image: url("rajcata.jpg");
+    
+}
+
+.recept.recept4 {
+    background-image: url("kure.jpg");
+    
+}
+
+.recept.recept5 {
+    background-image: url("grilovani.jpg");
+    
+}
+
+.recept {
+    min-height: 90px;
+    flex-basis: 375px;
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid white;
+}
+
+/*konec pokusu o mobilní náhled/
+
+/*pokus o query*/
