@@ -63,13 +63,14 @@ h2 {
 }
 
 .hlavni-recept {
-    background-image: url("burger.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("burger.jpg");
     min-height: 200px;
     flex-basis: 375px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .recept-meta {
@@ -83,6 +84,8 @@ h2 {
     flex-direction: column;
     align-self: flex-start;
     padding: 0.5rem;
+    padding-top: 7rem;
+    flex-wrap: wrap;
 }
 
 .sloupec {
@@ -91,16 +94,16 @@ h2 {
 }
 
 .recept.recept2 {
-    background-image: url("sushi.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("sushi.jpg");
 } 
 
 .recept.recept3 {
-    background-image: url("rajcata.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("rajcata.jpg");
     
 }
 
 .recept.recept4 {
-    background-image: url("kure.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("kure.jpg");
     
 }
 
@@ -119,4 +122,66 @@ h2 {
 
 /*konec pokusu o mobilní náhled/
 
-/*pokus o query*/
+/*pokus o query pro tablet*/
+
+@media screen and (min-width: 480px) and (max-width: 860px) {
+
+        .hlavni-recept {
+            max-height: 400px;
+            flex-grow: 2;
+        }
+
+        .sloupec {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-grow: 2;
+        }
+        
+        .recept-meta {
+            padding: 1.25rem;
+        } 
+
+        .hlavni-recept .recept-nazev {
+            font-size: 2rem;
+            padding-top: 10rem;
+        }
+
+        .recept-nazev {
+            padding: 1.25rem;
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    /*pokus o query pro PC*/
+    
+    @media screen and (min-width: 860px) and (max-width: 1600px) {
+
+        .hlavni-recept {
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-grow: 3;
+        }
+
+        .sloupec {
+            display: grid;
+            flex-wrap: wrap;
+            flex-grow: 2;
+        }
+
+        .recept-meta {
+            padding: 1.25rem;
+        } 
+
+        .hlavni-recept .recept-nazev {
+            font-size: 3rem;
+            padding-top: 10rem;
+        }
+
+        .recept-nazev {
+            font-size: 1.75rem;
+            padding: 1.25rem;
+            padding-top: 4rem;
+
+    }
