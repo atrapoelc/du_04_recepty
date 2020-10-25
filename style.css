@@ -65,7 +65,7 @@ h2 {
 .hlavni-recept {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("burger.jpg");
     min-height: 200px;
-    flex-basis: 375px;
+    flex-basis: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -91,6 +91,7 @@ h2 {
 .sloupec {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 100%;
 }
 
 .recept.recept2 {
@@ -114,7 +115,7 @@ h2 {
 
 .recept {
     min-height: 90px;
-    flex-basis: 375px;
+    flex-basis: 100%;
     background-position: center;
     background-size: 100%;
     border: 1px solid white;
@@ -156,7 +157,7 @@ h2 {
 
     /*pokus o query pro PC*/
     
-    @media screen and (min-width: 860px) and (max-width: 1600px) {
+    @media screen and (min-width: 860px) {
 
         .hlavni-recept {
             flex-direction: column;
