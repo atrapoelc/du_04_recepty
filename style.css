@@ -68,7 +68,7 @@ h2 {
     flex-basis: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -96,20 +96,24 @@ h2 {
 
 .recept.recept2 {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("sushi.jpg");
+    background-repeat: no-repeat;
 } 
 
 .recept.recept3 {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("rajcata.jpg");
+    background-repeat: no-repeat;
     
 }
 
 .recept.recept4 {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("kure.jpg");
+    background-repeat: no-repeat;
     
 }
 
 .recept.recept5 {
     background-image: url("grilovani.jpg");
+    background-repeat: no-repeat;
     
 }
 
@@ -117,7 +121,7 @@ h2 {
     min-height: 90px;
     flex-basis: 100%;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     border: 1px solid white;
 }
 
@@ -153,6 +157,10 @@ h2 {
 
         }
 
+        .recept {
+            flex-basis: 50%;
+        }
+
     }
 
     /*pokus o query pro PC*/
@@ -169,6 +177,7 @@ h2 {
             display: grid;
             flex-wrap: wrap;
             flex-grow: 2;
+            flex-basis: 50%;
         }
 
         .recept-meta {
